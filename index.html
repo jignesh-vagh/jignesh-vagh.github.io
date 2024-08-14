@@ -5,38 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--CSS Styles -->
+    <!-- CSS Styles -->
     <link rel="stylesheet" href="assets/css/styles.css" />
 
     <!-- Favicons -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/icons/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/icons/favicon-32x32.png"
-    />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png" />
 
     <!-- Animate CSS CDN -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <title>Jignesh Vagh | Portfolio</title>
+    <style>
+      /* Ensure content is not hidden behind fixed header */
+      section {
+        scroll-margin-top: 60px; /* Adjust this value based on your header height */
+      }
+    </style>
   </head>
 
   <body>
     <!-- Navbar -->
     <nav>
       <div>
-      <h1>JIGNESH VAGH</h1>
-      <span style="font-size: 16.5px; color: #ff7235;">Team Success Captain</span>  
+        <h1>JIGNESH VAGH</h1>
+        <span style="font-size: 16.5px; color: #ff7235;">Team Success Captain</span>
       </div>
-      
+
       <ul class="navigation">
         <li><a href="#about" class="nav-link">About</a></li>
         <li><a href="#skills" class="nav-link">Skills</a></li>
@@ -48,21 +42,16 @@
         <!-- <ion-icon class="times" name="close-outline"></ion-icon> -->
       </button>
     </nav>
-    
+
     <p></p>
 
     <!-- Hero Section -->
     <section class="hero" id="about">
-      <img
-        src="assets/images/man-at-work.webp"
-        alt="jignesh-vagh"
-        loading="lazy"
-        class="hero-img"
-      />
+      <img src="assets/images/man-at-work.webp" alt="jignesh-vagh" loading="lazy" class="hero-img" />
       <div class="bio animate__animated animate__shakeX">
         <h2 class="bio-title">About Me</h2>
         <p class="bio-text">
-            Hello! I am a Team Lead at Softweb Solutions Inc. (An Avnet Company), specializing in Linux and leadership. I am a Certified Adobe Commerce Front-End Developer Professional (AD0-E719), with expertise in PHP, MySQL, Angular, and Magento 2.X (Magento Cloud).
+          Hello! I am a Team Lead at Softweb Solutions Inc. (An Avnet Company), specializing in Linux and leadership. I am a Certified Adobe Commerce Front-End Developer Professional (AD0-E719), with expertise in PHP, MySQL, Angular, and Magento 2.X (Magento Cloud).
         </p>
       </div>
     </section>
@@ -81,54 +70,18 @@
     <!-- Skills section -->
     <section class="skills" id="skills">
       <h2 class="skill-header">My Top Skills</h2>
-
       <div class="skills-wrapper">
         <div class="first-set animate__animated animate__pulse">
-          <img
-            src="assets/icons/magento-adobe-logo.png"
-            alt=""
-            loading="lazy"
-            class="icon icon-card" title="Magento"
-          />
-          <img
-            src="assets/icons/angular-logo.png"
-            alt=""
-            loading="lazy"
-            class="icon icon-card" title="Angular"
-          />
-          <img
-            src="assets/icons/nodejs_logo.png"
-            alt=""
-            loading="lazy"
-            class="icon icon-card" title="NodeJs"
-          />
+          <img src="assets/icons/magento-adobe-logo.png" alt="" loading="lazy" class="icon icon-card" title="Magento" />
+          <img src="assets/icons/angular-logo.png" alt="" loading="lazy" class="icon icon-card" title="Angular" />
+          <img src="assets/icons/nodejs_logo.png" alt="" loading="lazy" class="icon icon-card" title="NodeJs" />
         </div>
 
         <div class="second-set animate__animated animate__pulse">
-          <img
-            src="assets/icons/php_logo.jpeg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card" title="PHP" style="padding: 2.85rem !important;"
-          />
-          <img
-            src="assets/icons/mysql-logo.png"
-            alt=""
-            loading="lazy"
-            class="icon icon-card" title="MySQL"
-          />
-          <img
-            src="assets/icons/azure-logo.svg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card" title="Azure Cloud"
-          />
-          <img
-            src="assets/icons/aws-logo.svg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card" title="AWS Cloud"
-          />
+          <img src="assets/icons/php_logo.jpeg" alt="" loading="lazy" class="icon icon-card" title="PHP" style="padding: 2.85rem !important;" />
+          <img src="assets/icons/mysql-logo.png" alt="" loading="lazy" class="icon icon-card" title="MySQL" />
+          <img src="assets/icons/azure-logo.svg" alt="" loading="lazy" class="icon icon-card" title="Azure Cloud" />
+          <img src="assets/icons/aws-logo.svg" alt="" loading="lazy" class="icon icon-card" title="AWS Cloud" />
         </div>
       </div>
     </section>
@@ -198,101 +151,58 @@
       </div>
     </section>
 
-
     <!-- Contact section -->
     <section class="contact" id="contact">
       <h2>Get In Touch With Me</h2>
       <div class="contact-form-container">
         <div class="contact-form">
-          <form
-            action="https://formspree.io/f/xzzpgqer"
-            method="POST"
-          >
+          <form action="https://formspree.io/f/xzzpgqer" method="POST">
             <div class="form-control">
               <label for="name">Name</label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Enter Your Name"
-                class="input-field"
-                required
-              />
+              <input type="text" id="name" name="name" placeholder="Enter Your Name" class="input-field" required />
             </div>
             <div class="form-control">
               <label for="email">Email</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Enter Your Email"
-                class="input-field"
-                required
-              />
+              <input type="email" id="email" name="email" placeholder="Enter Your Email" class="input-field" required />
             </div>
             <div class="form-control">
               <label for="message">Message</label>
-              <textarea
-                id="message"
-                cols="60"
-                rows="10"
-                placeholder="Enter Your Message"
-                name="message"
-                class="input-field"
-                required
-              ></textarea>
+              <textarea id="message" cols="60" rows="10" placeholder="Enter Your Message" name="message" class="input-field" required></textarea>
             </div>
 
             <!-- your other form fields go here -->
             <button type="submit" class="submit-btn">Send</button>
           </form>
-          
         </div>
       </div>
     </section>
 
     <!-- Social accounts - Fixed to the right -->
     <div class="socials">
-      <a href="https://www.linkedin.com/in/jigneshvagh" target="_blank"
-        ><img
-          src="assets/icons/icons8-linkedin-circled.gif"
-          alt="Linkedin"
-          loading="lazy"
-          class="socicon"
-      /></a>
-      <a href="https://github.com/jignesh-vagh" target="_blank"
-        ><img src="assets/icons/icons8-github.gif" alt="Github" class="socicon"
-      /></a>
+      <a href="https://www.linkedin.com/in/jigneshvagh" target="_blank">
+        <img src="assets/icons/icons8-linkedin-circled.gif" alt="Linkedin" loading="lazy" class="socicon" />
+      </a>
+      <a href="https://github.com/jignesh-vagh" target="_blank">
+        <img src="assets/icons/icons8-github.gif" alt="Github" class="socicon" />
+      </a>
     </div>
 
     <!-- Scroll to top -->
-    <i class="scroll-up" id="scroll-up"
-      ><img
-        src="assets/icons/icons8-upward-arrow.gif"
-        class="socicon up-arrow"
-        alt=""
-    /></i>
+    <i class="scroll-up" id="scroll-up">
+      <img src="assets/icons/icons8-upward-arrow.gif" class="socicon up-arrow" alt="" />
+    </i>
 
     <!-- Footer section -->
     <footer>
       <p class="copy">&copy; Copyright 2024</p>
-      <p class="copy">
-        Jignesh Vagh - Portfolio
-      </p>
+      <p class="copy">Jignesh Vagh - Portfolio</p>
     </footer>
 
     <!-- Website scripts -->
     <script src="assets/js/app.js"></script>
 
     <!-- Ion icons scripts -->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   </body>
 </html>
-

@@ -252,6 +252,7 @@ nav ul li {
   border: 2px outset var(--primary-color);
   font-size: 0.875rem;
   outline: none;
+      text-indent: 10px;
 }
 
 .input-field::placeholder {
